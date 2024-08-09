@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url("assets/bg-image.jpg") center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+h1,
+h2 {
+	color: black;
+	text-align: center;
+	text-shadow: 2px 2px 4px #f5b3b3, -2px -2px 4px #e3f5b3;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.493);
+	backdrop-filter: invert(10px);
+	width: 100%;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 20px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor__reloj {
+	display: flex;
+	flex-wrap: wrap; /* Para ajustar los elementos en pantallas pequeñas */
+	gap: 20px;
+	justify-content: center;
+}
+
+.container_box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-size: 24px; /* Tamaño de fuente reducido para pantallas pequeñas */
+}
+
+.container__numero {
+	background-color: rgba(0, 0, 0, 0.493);
+	backdrop-filter: invert(10px);
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px; /* Ancho reducido para pantallas pequeñas */
+	height: 80px; /* Altura reducida para pantallas pequeñas */
+	padding: 20px; /* Padding reducido para pantallas pequeñas */
+}
+
+.container_box_days .container__numero {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.container_box_seconds .container__numero {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+span {
+	color: white;
+}
